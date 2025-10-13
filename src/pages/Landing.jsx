@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import React, { useState, useEffect, useRef, Children, useCallback, useMemo, useLayoutEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -830,8 +829,8 @@ export default function App() {
                 <SpotlightCard>
                     <div className="stat-card"> 
                       <FaGraduationCap className="stat-icon" />  
-                         <h3>10 CGPA</h3>
-                         <p>Secured a perfect 10 CGPA in 2 semesters at Chitkara University while pursuing my BE-CSE degree, showcasing excellence in my academic journey.</p>
+                        <h3>10 CGPA</h3>
+                        <p>Secured a perfect 10 CGPA in 2 semesters at Chitkara University while pursuing my BE-CSE degree, showcasing excellence in my academic journey.</p>
                     </div>
                 </SpotlightCard>
             </div>
