@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, #root {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.grey-section {
+    width: 30%;
+    background-color: #2c3e50;
+    height: 100%;
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+.purple-section {
+    width: 70%;
+    background: linear-gradient(135deg, #8a2be2, #ff69b4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease;
+}
+
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+    z-index: 100;
+    align-items: center;
+}
+
+.nav-item {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bulb-container {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    animation: swing 5s infinite ease-in-out;
+    transform-origin: top center;
+}
+
+.cord {
+    width: 4px;
+    height: 150px;
+    background-color: #7f8c8d;
+    margin-bottom: -5px;
+    transition: height 0.5s ease;
+}
+
+.bulb {
+    width: 50px;
+    height: 50px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px #f1c40f;
+    transition: all 0.5s ease;
+}
+
+.bulb-base {
+    width: 20px;
+    height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+}
+
+.bulb:hover {
+    transform: scale(1.1);
+}
+
+.bulb.on {
+    background-color: #f39c12;
+    box-shadow: 0 0 40px #f1c40f, 0 0 80px #f1c40f;
+}
+
+.intro-text {
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.intro-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Dark theme styles */
+.dark .grey-section {
+    background-color: #1a1a2e;
+}
+
+.dark .purple-section {
+    background: linear-gradient(135deg, #4a1c6d, #8a3a6b);
+}
+
+.dark .bulb {
+    background-color: #ecf0f1;
+    box-shadow: 0 0 20px #ecf0f1;
+}
+
+.dark .bulb.on {
+    box-shadow: 0 0 40px #ecf0f1, 0 0 80px #ecf0f1;
+}
+
+/* Animation for the bulb */
+@keyframes swing {
+    0%, 100% { transform: translateX(-50%) rotate(-3deg); }
+    50% { transform: translateX(-50%) rotate(3deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .grey-section {
+       height: 40% !important;
+       width: 100%;
+    }
+
+    .purple-section {
+        height: 60% !important;
+        width: 100%;
+    }
+    
+    .bulb-container {
+        top: 20px;
+    }
+    
+    .cord {
+        height: 80px;
+    }
+    
+    .intro-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+}
