@@ -15,6 +15,7 @@ import dataVisProImg from '../assets/datavis-pro.png';
 import auraCommerceImg from '../assets/aura-commerce.png';
 import yapyap from '../assets/yapyap.png';
 import acrtable from '../assets/arctable.png';
+import skylock from '../assets/skylock.png'
 
 
 import './landing.css';
@@ -63,6 +64,14 @@ const projectsData = [
         description: "Making a table tennis game using typescript",
         githubUrl: "https://github.com/rohitmehta18/Arc-Table",
         liveUrl: "#"
+    },
+    {
+        name: "Sky Lock",
+        title: "python",
+        avatarUrl: skylock,
+        description: "Skylock continuously monitors your workspace with live face detection. If an unknown person is detected, it automatically captures a photo, records periodic screenshots of on‑screen activity, and emails you the evidence. Replying “off” to that notification immediately locks the computer — so you can secure your machine from anywhere",
+        githubUrl: "https://github.com/rohitmehta18/SkyLock",
+        liveUrl: "https://github.com/rohitmehta18/SkyLock/archive/refs/heads/main.zip"
     }
 ];
 
