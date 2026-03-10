@@ -23,8 +23,17 @@ import './landing.css';
 
 //==================================================================
 // Project Data
-//==================================================================
+//================================================================== 
+     
 const projectsData = [
+    {
+        name: "Sky Lock",
+        title: "python",
+        avatarUrl: skylock,
+        description: "Skylock continuously monitors your workspace with live face detection. If an unknown person is detected, it automatically captures a photo, records periodic screenshots of on‑screen activity, and emails you the evidence. Replying “off” to that notification immediately locks the computer — so you can secure your machine from anywhere",
+        githubUrl: "https://github.com/rohitmehta18/SkyLock",
+        liveUrl: "https://github.com/rohitmehta18/SkyLock/archive/refs/heads/main.zip"
+    },
     {
         name: "Fake Plays",
         title: "React.js, Node.js, Express, MongoDB, Integrated JWT + Google OAuth",
@@ -64,14 +73,6 @@ const projectsData = [
         description: "Making a table tennis game using typescript",
         githubUrl: "https://github.com/rohitmehta18/Arc-Table",
         liveUrl: "#"
-    },
-    {
-        name: "Sky Lock",
-        title: "python",
-        avatarUrl: skylock,
-        description: "Skylock continuously monitors your workspace with live face detection. If an unknown person is detected, it automatically captures a photo, records periodic screenshots of on‑screen activity, and emails you the evidence. Replying “off” to that notification immediately locks the computer — so you can secure your machine from anywhere",
-        githubUrl: "https://github.com/rohitmehta18/SkyLock",
-        liveUrl: "https://github.com/rohitmehta18/SkyLock/archive/refs/heads/main.zip"
     }
 ];
 
@@ -824,22 +825,22 @@ export default function App() {
                 <SpotlightCard>
                     <div className="stat-card">
                         <FaGithub className="stat-icon" />
-                        <h3 className="stat-number">60+</h3>
-                        <p>I have worked on 60+ projects and assignments on GitHub, including open-source contributions. These span a wide range of domains, from frontend and backend development to full-stack applications, reflecting my versatility and hands-on experience across different technologies.</p>
+                        <h3 className="stat-number">70+</h3>
+                        <p>I have worked on 70+ projects and assignments on GitHub, including open-source contributions. These span a wide range of domains, from frontend and backend development to full-stack applications, reflecting my versatility and hands-on experience across different technologies.</p>
                     </div>
                 </SpotlightCard>
                 <SpotlightCard>
                     <div className="stat-card">
                         <SiLeetcode className="stat-icon" />
-                        <h3 className="stat-number">100+</h3>
-                        <p>I have solved 100+ DSA problems on LeetCode, demonstrating strong problem-solving skills and a solid understanding of data structures and algorithms..</p>
+                        <h3 className="stat-number">120+</h3>
+                        <p>I have solved 120+ DSA problems on LeetCode, demonstrating strong problem-solving skills and a solid understanding of data structures and algorithms..</p>
                     </div>
                 </SpotlightCard>
                 <SpotlightCard>
                     <div className="stat-card"> 
                       <FaGraduationCap className="stat-icon" />  
                         <h3>10 CGPA</h3>
-                        <p>Secured a perfect 10 CGPA in 2 semesters at Chitkara University while pursuing my BE-CSE degree, showcasing excellence in my academic journey.</p>
+                        <p>Secured a perfect 10 CGPA in 3 semesters at Chitkara University while pursuing my BE-CSE degree, showcasing excellence in my academic journey.</p>
                     </div>
                 </SpotlightCard>
             </div>
